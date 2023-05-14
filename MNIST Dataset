@@ -67,4 +67,17 @@ for epoch in range(num_epochs):
 
 # Testing
 with torch.no_grad():
-   
+correct_predictions = 0
+total_predictions = 0
+for images, labels in test_loader:
+    # Move tensors to the configured device
+    images = images.reshape(-1, 28*28).to(device)
+    labels = labels.to(device)
+    # Forward
+    outputs = model(images)
+    _, predicted = torch.max(outputs.data, 1)
+    total_predictions += labels.size(0)
+    correct_predictions += (predicted == labels).sum().item()
+
+accuracy = 100 * correct_predictions / total_predictions
+print('Accuracy of the network on the 10000 test images: {} %'.format(accuracy))
