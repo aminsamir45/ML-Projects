@@ -20,5 +20,3 @@ The projects include the training and evaluation of machine learning models usin
 
 Documentation and Reproducibility:
 Each project in the repository is accompanied by detailed documentation, including project descriptions, methodologies, and code explanations. This ensures reproducibility and enables others to understand and reproduce the results.
-
-By exploring the ML Projects GitHub repository, viewers can gain insights into my skills, knowledge, and expertise in machine learning and data science. It demonstrates my ability to handle diverse projects, apply various algorithms, and deliver high-quality, well-documented code.
