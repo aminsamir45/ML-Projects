@@ -1,0 +1,1951 @@
+2023-06-12 07:23:35,418:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 07:23:35,418:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 07:23:35,418:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 07:23:35,418:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 07:23:37,813:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-12 07:23:45,566:INFO:PyCaret RegressionExperiment
+2023-06-12 07:23:45,567:INFO:Logging name: reg-default-name
+2023-06-12 07:23:45,567:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-06-12 07:23:45,567:INFO:version 3.0.2
+2023-06-12 07:23:45,567:INFO:Initializing setup()
+2023-06-12 07:23:45,567:INFO:self.USI: 9e90
+2023-06-12 07:23:45,567:INFO:self._variable_keys: {'fold_shuffle_param', 'X', 'exp_name_log', 'transform_target_param', 'USI', 'log_plots_param', 'logging_param', 'target_param', 'X_train', 'exp_id', 'idx', 'html_param', 'y', 'gpu_param', 'data', 'fold_groups_param', 'y_train', 'fold_generator', 'memory', 'X_test', 'seed', '_ml_usecase', 'pipeline', 'y_test', '_available_plots', 'gpu_n_jobs_param', 'n_jobs_param'}
+2023-06-12 07:23:45,568:INFO:Checking environment
+2023-06-12 07:23:45,568:INFO:python_version: 3.10.7
+2023-06-12 07:23:45,568:INFO:python_build: ('tags/v3.10.7:6cc6b13', 'Sep  5 2022 14:08:36')
+2023-06-12 07:23:45,568:INFO:machine: AMD64
+2023-06-12 07:23:45,568:INFO:platform: Windows-10-10.0.22621-SP0
+2023-06-12 07:23:45,568:INFO:Memory: svmem(total=8356937728, available=1249832960, percent=85.0, used=7107104768, free=1249832960)
+2023-06-12 07:23:45,569:INFO:Physical Core: 2
+2023-06-12 07:23:45,569:INFO:Logical Core: 4
+2023-06-12 07:23:45,569:INFO:Checking libraries
+2023-06-12 07:23:45,569:INFO:System:
+2023-06-12 07:23:45,570:INFO:    python: 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]
+2023-06-12 07:23:45,570:INFO:executable: C:\Users\samin\AppData\Local\Programs\Python\Python310\python.exe
+2023-06-12 07:23:45,570:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-06-12 07:23:45,570:INFO:PyCaret required dependencies:
+2023-06-12 07:23:45,570:INFO:                 pip: 23.1.2
+2023-06-12 07:23:45,570:INFO:          setuptools: 67.8.0
+2023-06-12 07:23:45,570:INFO:             pycaret: 3.0.2
+2023-06-12 07:23:45,570:INFO:             IPython: 8.5.0
+2023-06-12 07:23:45,571:INFO:          ipywidgets: 8.0.6
+2023-06-12 07:23:45,571:INFO:                tqdm: 4.64.1
+2023-06-12 07:23:45,571:INFO:               numpy: 1.23.5
+2023-06-12 07:23:45,571:INFO:              pandas: 1.5.3
+2023-06-12 07:23:45,571:INFO:              jinja2: 3.1.2
+2023-06-12 07:23:45,571:INFO:               scipy: 1.9.3
+2023-06-12 07:23:45,571:INFO:              joblib: 1.2.0
+2023-06-12 07:23:45,571:INFO:             sklearn: 1.2.0
+2023-06-12 07:23:45,571:INFO:                pyod: 1.0.9
+2023-06-12 07:23:45,571:INFO:            imblearn: 0.10.1
+2023-06-12 07:23:45,572:INFO:   category_encoders: 2.6.1
+2023-06-12 07:23:45,572:INFO:            lightgbm: 3.3.5
+2023-06-12 07:23:45,572:INFO:               numba: 0.56.4
+2023-06-12 07:23:45,572:INFO:            requests: 2.28.1
+2023-06-12 07:23:45,572:INFO:          matplotlib: 3.6.3
+2023-06-12 07:23:45,572:INFO:          scikitplot: 0.3.7
+2023-06-12 07:23:45,572:INFO:         yellowbrick: 1.5
+2023-06-12 07:23:45,572:INFO:              plotly: 5.14.1
+2023-06-12 07:23:45,572:INFO:             kaleido: 0.2.1
+2023-06-12 07:23:45,572:INFO:         statsmodels: 0.13.5
+2023-06-12 07:23:45,572:INFO:              sktime: 0.17.0
+2023-06-12 07:23:45,574:INFO:               tbats: 1.1.3
+2023-06-12 07:23:45,574:INFO:            pmdarima: 2.0.3
+2023-06-12 07:23:45,574:INFO:              psutil: 5.9.2
+2023-06-12 07:23:45,574:INFO:PyCaret optional dependencies:
+2023-06-12 07:23:45,599:INFO:                shap: Not installed
+2023-06-12 07:23:45,600:INFO:           interpret: Not installed
+2023-06-12 07:23:45,600:INFO:                umap: Not installed
+2023-06-12 07:23:45,600:INFO:    pandas_profiling: 4.1.2
+2023-06-12 07:23:45,600:INFO:  explainerdashboard: Not installed
+2023-06-12 07:23:45,600:INFO:             autoviz: Not installed
+2023-06-12 07:23:45,600:INFO:           fairlearn: Not installed
+2023-06-12 07:23:45,600:INFO:             xgboost: 1.7.5
+2023-06-12 07:23:45,600:INFO:            catboost: Not installed
+2023-06-12 07:23:45,600:INFO:              kmodes: Not installed
+2023-06-12 07:23:45,600:INFO:             mlxtend: Not installed
+2023-06-12 07:23:45,600:INFO:       statsforecast: Not installed
+2023-06-12 07:23:45,600:INFO:        tune_sklearn: Not installed
+2023-06-12 07:23:45,600:INFO:                 ray: Not installed
+2023-06-12 07:23:45,600:INFO:            hyperopt: Not installed
+2023-06-12 07:23:45,600:INFO:              optuna: Not installed
+2023-06-12 07:23:45,600:INFO:               skopt: Not installed
+2023-06-12 07:23:45,600:INFO:              mlflow: Not installed
+2023-06-12 07:23:45,600:INFO:              gradio: Not installed
+2023-06-12 07:23:45,601:INFO:             fastapi: Not installed
+2023-06-12 07:23:45,601:INFO:             uvicorn: Not installed
+2023-06-12 07:23:45,601:INFO:              m2cgen: Not installed
+2023-06-12 07:23:45,601:INFO:           evidently: Not installed
+2023-06-12 07:23:45,601:INFO:               fugue: Not installed
+2023-06-12 07:23:45,601:INFO:           streamlit: 1.22.0
+2023-06-12 07:23:45,601:INFO:             prophet: Not installed
+2023-06-12 07:23:45,601:INFO:None
+2023-06-12 07:23:45,601:INFO:Set up data.
+2023-06-12 07:23:45,617:INFO:Set up train/test split.
+2023-06-12 07:23:45,626:INFO:Set up index.
+2023-06-12 07:23:45,626:INFO:Set up folding strategy.
+2023-06-12 07:23:45,626:INFO:Assigning column types.
+2023-06-12 07:23:45,629:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-12 07:23:45,630:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,634:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,639:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,705:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,748:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,748:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:45,950:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:45,951:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,956:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:23:45,960:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,023:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,069:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,069:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,072:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,072:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-06-12 07:23:46,080:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,087:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,160:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,202:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,203:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,205:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,210:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,215:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,277:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,324:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,324:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,327:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,328:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-06-12 07:23:46,337:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,400:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,443:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,444:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,447:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,459:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,521:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,568:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,569:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,571:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,572:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-06-12 07:23:46,646:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,692:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,693:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,697:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,773:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,821:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,822:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,825:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:46,825:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-06-12 07:23:46,897:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:46,941:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:46,943:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:47,016:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:23:47,059:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:47,062:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:47,063:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-06-12 07:23:47,186:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:47,188:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:47,311:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:47,315:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:47,321:INFO:Preparing preprocessing pipeline...
+2023-06-12 07:23:47,321:INFO:Set up simple imputation.
+2023-06-12 07:23:47,337:INFO:Set up encoding of ordinal features.
+2023-06-12 07:23:47,338:INFO:Set up encoding of categorical features.
+2023-06-12 07:23:47,339:INFO:Set up removing outliers.
+2023-06-12 07:23:47,339:INFO:Set up feature normalization.
+2023-06-12 07:23:47,689:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:23:47,861:INFO:Finished creating preprocessing pipeline.
+2023-06-12 07:23:47,889:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\cygwin64\tmp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'income',
+                                             'purchase_frequency'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name', 'gender', 'education',
+                                             'country'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Tra...
+                                    transformer=OneHotEncoder(cols=['education'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name', 'country'],
+                                    transformer=TargetEncoder(cols=['name',
+                                                                    'country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=123))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-06-12 07:23:47,889:INFO:Creating final display dataframe.
+2023-06-12 07:23:48,189:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:23:48,801:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target          spending
+2                   Target type        Regression
+3           Original data shape         (1000, 8)
+4        Transformed data shape         (965, 11)
+5   Transformed train set shape         (665, 11)
+6    Transformed test set shape         (300, 11)
+7              Ordinal features                 1
+8              Numeric features                 3
+9          Categorical features                 4
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16              Remove outliers              True
+17           Outliers threshold              0.05
+18                    Normalize              True
+19             Normalize method            zscore
+20               Fold Generator             KFold
+21                  Fold Number                 3
+22                     CPU Jobs                -1
+23                      Use GPU             False
+24               Log Experiment             False
+25              Experiment Name  reg-default-name
+26                          USI              9e90
+2023-06-12 07:23:48,948:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:48,950:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:49,076:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:23:49,079:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:23:49,079:INFO:setup() successfully completed in 3.52s...............
+2023-06-12 07:24:17,457:INFO:PyCaret RegressionExperiment
+2023-06-12 07:24:17,458:INFO:Logging name: reg-default-name
+2023-06-12 07:24:17,458:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-06-12 07:24:17,458:INFO:version 3.0.2
+2023-06-12 07:24:17,458:INFO:Initializing setup()
+2023-06-12 07:24:17,458:INFO:self.USI: 17c5
+2023-06-12 07:24:17,458:INFO:self._variable_keys: {'fold_shuffle_param', 'X', 'exp_name_log', 'transform_target_param', 'USI', 'log_plots_param', 'logging_param', 'target_param', 'X_train', 'exp_id', 'idx', 'html_param', 'y', 'gpu_param', 'data', 'fold_groups_param', 'y_train', 'fold_generator', 'memory', 'X_test', 'seed', '_ml_usecase', 'pipeline', 'y_test', '_available_plots', 'gpu_n_jobs_param', 'n_jobs_param'}
+2023-06-12 07:24:17,458:INFO:Checking environment
+2023-06-12 07:24:17,458:INFO:python_version: 3.10.7
+2023-06-12 07:24:17,458:INFO:python_build: ('tags/v3.10.7:6cc6b13', 'Sep  5 2022 14:08:36')
+2023-06-12 07:24:17,458:INFO:machine: AMD64
+2023-06-12 07:24:17,458:INFO:platform: Windows-10-10.0.22621-SP0
+2023-06-12 07:24:17,459:INFO:Memory: svmem(total=8356937728, available=1295773696, percent=84.5, used=7061164032, free=1295773696)
+2023-06-12 07:24:17,459:INFO:Physical Core: 2
+2023-06-12 07:24:17,459:INFO:Logical Core: 4
+2023-06-12 07:24:17,459:INFO:Checking libraries
+2023-06-12 07:24:17,459:INFO:System:
+2023-06-12 07:24:17,459:INFO:    python: 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]
+2023-06-12 07:24:17,459:INFO:executable: C:\Users\samin\AppData\Local\Programs\Python\Python310\python.exe
+2023-06-12 07:24:17,459:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-06-12 07:24:17,460:INFO:PyCaret required dependencies:
+2023-06-12 07:24:17,460:INFO:                 pip: 23.1.2
+2023-06-12 07:24:17,460:INFO:          setuptools: 67.8.0
+2023-06-12 07:24:17,460:INFO:             pycaret: 3.0.2
+2023-06-12 07:24:17,460:INFO:             IPython: 8.5.0
+2023-06-12 07:24:17,460:INFO:          ipywidgets: 8.0.6
+2023-06-12 07:24:17,460:INFO:                tqdm: 4.64.1
+2023-06-12 07:24:17,461:INFO:               numpy: 1.23.5
+2023-06-12 07:24:17,461:INFO:              pandas: 1.5.3
+2023-06-12 07:24:17,461:INFO:              jinja2: 3.1.2
+2023-06-12 07:24:17,461:INFO:               scipy: 1.9.3
+2023-06-12 07:24:17,461:INFO:              joblib: 1.2.0
+2023-06-12 07:24:17,461:INFO:             sklearn: 1.2.0
+2023-06-12 07:24:17,461:INFO:                pyod: 1.0.9
+2023-06-12 07:24:17,461:INFO:            imblearn: 0.10.1
+2023-06-12 07:24:17,462:INFO:   category_encoders: 2.6.1
+2023-06-12 07:24:17,462:INFO:            lightgbm: 3.3.5
+2023-06-12 07:24:17,462:INFO:               numba: 0.56.4
+2023-06-12 07:24:17,462:INFO:            requests: 2.28.1
+2023-06-12 07:24:17,462:INFO:          matplotlib: 3.6.3
+2023-06-12 07:24:17,462:INFO:          scikitplot: 0.3.7
+2023-06-12 07:24:17,462:INFO:         yellowbrick: 1.5
+2023-06-12 07:24:17,462:INFO:              plotly: 5.14.1
+2023-06-12 07:24:17,462:INFO:             kaleido: 0.2.1
+2023-06-12 07:24:17,462:INFO:         statsmodels: 0.13.5
+2023-06-12 07:24:17,462:INFO:              sktime: 0.17.0
+2023-06-12 07:24:17,463:INFO:               tbats: 1.1.3
+2023-06-12 07:24:17,463:INFO:            pmdarima: 2.0.3
+2023-06-12 07:24:17,463:INFO:              psutil: 5.9.2
+2023-06-12 07:24:17,463:INFO:PyCaret optional dependencies:
+2023-06-12 07:24:17,463:INFO:                shap: Not installed
+2023-06-12 07:24:17,463:INFO:           interpret: Not installed
+2023-06-12 07:24:17,463:INFO:                umap: Not installed
+2023-06-12 07:24:17,463:INFO:    pandas_profiling: 4.1.2
+2023-06-12 07:24:17,463:INFO:  explainerdashboard: Not installed
+2023-06-12 07:24:17,464:INFO:             autoviz: Not installed
+2023-06-12 07:24:17,464:INFO:           fairlearn: Not installed
+2023-06-12 07:24:17,464:INFO:             xgboost: 1.7.5
+2023-06-12 07:24:17,464:INFO:            catboost: Not installed
+2023-06-12 07:24:17,464:INFO:              kmodes: Not installed
+2023-06-12 07:24:17,464:INFO:             mlxtend: Not installed
+2023-06-12 07:24:17,464:INFO:       statsforecast: Not installed
+2023-06-12 07:24:17,464:INFO:        tune_sklearn: Not installed
+2023-06-12 07:24:17,464:INFO:                 ray: Not installed
+2023-06-12 07:24:17,464:INFO:            hyperopt: Not installed
+2023-06-12 07:24:17,464:INFO:              optuna: Not installed
+2023-06-12 07:24:17,464:INFO:               skopt: Not installed
+2023-06-12 07:24:17,464:INFO:              mlflow: Not installed
+2023-06-12 07:24:17,465:INFO:              gradio: Not installed
+2023-06-12 07:24:17,465:INFO:             fastapi: Not installed
+2023-06-12 07:24:17,465:INFO:             uvicorn: Not installed
+2023-06-12 07:24:17,465:INFO:              m2cgen: Not installed
+2023-06-12 07:24:17,465:INFO:           evidently: Not installed
+2023-06-12 07:24:17,465:INFO:               fugue: Not installed
+2023-06-12 07:24:17,465:INFO:           streamlit: 1.22.0
+2023-06-12 07:24:17,465:INFO:             prophet: Not installed
+2023-06-12 07:24:17,466:INFO:None
+2023-06-12 07:24:17,466:INFO:Set up data.
+2023-06-12 07:24:17,480:INFO:Set up train/test split.
+2023-06-12 07:24:17,488:INFO:Set up index.
+2023-06-12 07:24:17,488:INFO:Set up folding strategy.
+2023-06-12 07:24:17,488:INFO:Assigning column types.
+2023-06-12 07:24:17,492:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-12 07:24:17,492:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,497:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,505:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,565:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,614:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,614:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:17,617:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:17,617:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,622:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,626:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,687:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,733:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,734:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:17,738:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:17,739:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-06-12 07:24:17,744:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,749:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,807:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,856:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,857:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:17,859:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:17,862:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,867:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,928:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,978:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:17,978:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:17,981:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:17,981:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-06-12 07:24:17,990:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,048:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,096:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,097:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,099:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,111:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,167:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,212:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,213:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,216:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,217:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-06-12 07:24:18,283:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,334:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,334:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,337:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,408:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,455:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,455:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,458:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,459:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-06-12 07:24:18,526:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,576:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,579:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,645:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-12 07:24:18,691:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,694:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,694:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-06-12 07:24:18,811:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,813:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,931:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:18,934:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:18,935:INFO:Preparing preprocessing pipeline...
+2023-06-12 07:24:18,935:INFO:Set up simple imputation.
+2023-06-12 07:24:18,938:INFO:Set up encoding of ordinal features.
+2023-06-12 07:24:18,940:INFO:Set up encoding of categorical features.
+2023-06-12 07:24:18,940:INFO:Set up removing outliers.
+2023-06-12 07:24:18,940:INFO:Set up feature normalization.
+2023-06-12 07:24:19,089:INFO:Finished creating preprocessing pipeline.
+2023-06-12 07:24:19,118:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\cygwin64\tmp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'income',
+                                             'purchase_frequency'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name', 'gender', 'education',
+                                             'country'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Tra...
+                                    transformer=OneHotEncoder(cols=['education'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name', 'country'],
+                                    transformer=TargetEncoder(cols=['name',
+                                                                    'country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=123))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-06-12 07:24:19,119:INFO:Creating final display dataframe.
+2023-06-12 07:24:19,511:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target          spending
+2                   Target type        Regression
+3           Original data shape         (1000, 8)
+4        Transformed data shape         (965, 11)
+5   Transformed train set shape         (665, 11)
+6    Transformed test set shape         (300, 11)
+7              Ordinal features                 1
+8              Numeric features                 3
+9          Categorical features                 4
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16              Remove outliers              True
+17           Outliers threshold              0.05
+18                    Normalize              True
+19             Normalize method            zscore
+20               Fold Generator             KFold
+21                  Fold Number                 5
+22                     CPU Jobs                -1
+23                      Use GPU             False
+24               Log Experiment             False
+25              Experiment Name  reg-default-name
+26                          USI              17c5
+2023-06-12 07:24:19,644:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:19,649:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:19,766:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-12 07:24:19,770:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-12 07:24:19,772:INFO:setup() successfully completed in 2.32s...............
+2023-06-12 07:24:37,686:INFO:Initializing compare_models()
+2023-06-12 07:24:37,686:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2023-06-12 07:24:37,687:INFO:Checking exceptions
+2023-06-12 07:24:37,691:INFO:Preparing display monitor
+2023-06-12 07:24:37,778:INFO:Initializing Linear Regression
+2023-06-12 07:24:37,778:INFO:Total runtime is 1.6661485036214194e-05 minutes
+2023-06-12 07:24:37,783:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:37,784:INFO:Initializing create_model()
+2023-06-12 07:24:37,784:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=lr, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:37,784:INFO:Checking exceptions
+2023-06-12 07:24:37,784:INFO:Importing libraries
+2023-06-12 07:24:37,785:INFO:Copying training dataset
+2023-06-12 07:24:37,789:INFO:Defining folds
+2023-06-12 07:24:37,789:INFO:Declaring metric variables
+2023-06-12 07:24:37,793:INFO:Importing untrained model
+2023-06-12 07:24:37,798:INFO:Linear Regression Imported successfully
+2023-06-12 07:24:37,822:INFO:Starting cross validation
+2023-06-12 07:24:37,847:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:46,804:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:24:46,813:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:24:46,824:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:24:46,887:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:24:47,970:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:409: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-06-12 07:24:48,266:INFO:Calculating mean and std
+2023-06-12 07:24:48,268:INFO:Creating metrics dataframe
+2023-06-12 07:24:48,286:INFO:Uploading results into container
+2023-06-12 07:24:48,287:INFO:Uploading model into container now
+2023-06-12 07:24:48,288:INFO:_master_model_container: 1
+2023-06-12 07:24:48,288:INFO:_display_container: 2
+2023-06-12 07:24:48,288:INFO:LinearRegression(n_jobs=-1)
+2023-06-12 07:24:48,289:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:48,389:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:48,390:INFO:Creating metrics dataframe
+2023-06-12 07:24:48,403:INFO:Initializing Lasso Regression
+2023-06-12 07:24:48,403:INFO:Total runtime is 0.17710222403208414 minutes
+2023-06-12 07:24:48,410:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:48,411:INFO:Initializing create_model()
+2023-06-12 07:24:48,411:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=lasso, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:48,411:INFO:Checking exceptions
+2023-06-12 07:24:48,411:INFO:Importing libraries
+2023-06-12 07:24:48,411:INFO:Copying training dataset
+2023-06-12 07:24:48,421:INFO:Defining folds
+2023-06-12 07:24:48,421:INFO:Declaring metric variables
+2023-06-12 07:24:48,438:INFO:Importing untrained model
+2023-06-12 07:24:48,454:INFO:Lasso Regression Imported successfully
+2023-06-12 07:24:48,468:INFO:Starting cross validation
+2023-06-12 07:24:48,470:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:49,402:INFO:Calculating mean and std
+2023-06-12 07:24:49,405:INFO:Creating metrics dataframe
+2023-06-12 07:24:49,423:INFO:Uploading results into container
+2023-06-12 07:24:49,424:INFO:Uploading model into container now
+2023-06-12 07:24:49,424:INFO:_master_model_container: 2
+2023-06-12 07:24:49,424:INFO:_display_container: 2
+2023-06-12 07:24:49,424:INFO:Lasso(random_state=123)
+2023-06-12 07:24:49,424:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:49,516:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:49,516:INFO:Creating metrics dataframe
+2023-06-12 07:24:49,524:INFO:Initializing Ridge Regression
+2023-06-12 07:24:49,525:INFO:Total runtime is 0.195794411500295 minutes
+2023-06-12 07:24:49,528:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:49,529:INFO:Initializing create_model()
+2023-06-12 07:24:49,529:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=ridge, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:49,529:INFO:Checking exceptions
+2023-06-12 07:24:49,530:INFO:Importing libraries
+2023-06-12 07:24:49,530:INFO:Copying training dataset
+2023-06-12 07:24:49,540:INFO:Defining folds
+2023-06-12 07:24:49,541:INFO:Declaring metric variables
+2023-06-12 07:24:49,554:INFO:Importing untrained model
+2023-06-12 07:24:49,568:INFO:Ridge Regression Imported successfully
+2023-06-12 07:24:49,581:INFO:Starting cross validation
+2023-06-12 07:24:49,585:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:50,490:INFO:Calculating mean and std
+2023-06-12 07:24:50,492:INFO:Creating metrics dataframe
+2023-06-12 07:24:50,515:INFO:Uploading results into container
+2023-06-12 07:24:50,516:INFO:Uploading model into container now
+2023-06-12 07:24:50,516:INFO:_master_model_container: 3
+2023-06-12 07:24:50,517:INFO:_display_container: 2
+2023-06-12 07:24:50,517:INFO:Ridge(random_state=123)
+2023-06-12 07:24:50,517:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:50,609:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:50,609:INFO:Creating metrics dataframe
+2023-06-12 07:24:50,618:INFO:Initializing Elastic Net
+2023-06-12 07:24:50,618:INFO:Total runtime is 0.2140164573987325 minutes
+2023-06-12 07:24:50,623:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:50,624:INFO:Initializing create_model()
+2023-06-12 07:24:50,624:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=en, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:50,624:INFO:Checking exceptions
+2023-06-12 07:24:50,624:INFO:Importing libraries
+2023-06-12 07:24:50,624:INFO:Copying training dataset
+2023-06-12 07:24:50,639:INFO:Defining folds
+2023-06-12 07:24:50,639:INFO:Declaring metric variables
+2023-06-12 07:24:50,653:INFO:Importing untrained model
+2023-06-12 07:24:50,657:INFO:Elastic Net Imported successfully
+2023-06-12 07:24:50,666:INFO:Starting cross validation
+2023-06-12 07:24:50,672:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:51,589:INFO:Calculating mean and std
+2023-06-12 07:24:51,591:INFO:Creating metrics dataframe
+2023-06-12 07:24:51,616:INFO:Uploading results into container
+2023-06-12 07:24:51,616:INFO:Uploading model into container now
+2023-06-12 07:24:51,617:INFO:_master_model_container: 4
+2023-06-12 07:24:51,617:INFO:_display_container: 2
+2023-06-12 07:24:51,617:INFO:ElasticNet(random_state=123)
+2023-06-12 07:24:51,617:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:51,708:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:51,709:INFO:Creating metrics dataframe
+2023-06-12 07:24:51,718:INFO:Initializing Least Angle Regression
+2023-06-12 07:24:51,718:INFO:Total runtime is 0.23234592676162721 minutes
+2023-06-12 07:24:51,721:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:51,722:INFO:Initializing create_model()
+2023-06-12 07:24:51,722:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=lar, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:51,722:INFO:Checking exceptions
+2023-06-12 07:24:51,722:INFO:Importing libraries
+2023-06-12 07:24:51,722:INFO:Copying training dataset
+2023-06-12 07:24:51,729:INFO:Defining folds
+2023-06-12 07:24:51,729:INFO:Declaring metric variables
+2023-06-12 07:24:51,735:INFO:Importing untrained model
+2023-06-12 07:24:51,745:INFO:Least Angle Regression Imported successfully
+2023-06-12 07:24:51,764:INFO:Starting cross validation
+2023-06-12 07:24:51,769:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:52,674:INFO:Calculating mean and std
+2023-06-12 07:24:52,678:INFO:Creating metrics dataframe
+2023-06-12 07:24:52,705:INFO:Uploading results into container
+2023-06-12 07:24:52,706:INFO:Uploading model into container now
+2023-06-12 07:24:52,706:INFO:_master_model_container: 5
+2023-06-12 07:24:52,706:INFO:_display_container: 2
+2023-06-12 07:24:52,707:INFO:Lars(random_state=123)
+2023-06-12 07:24:52,707:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:52,819:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:52,819:INFO:Creating metrics dataframe
+2023-06-12 07:24:52,845:INFO:Initializing Lasso Least Angle Regression
+2023-06-12 07:24:52,846:INFO:Total runtime is 0.25112802584966026 minutes
+2023-06-12 07:24:52,859:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:52,861:INFO:Initializing create_model()
+2023-06-12 07:24:52,861:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=llar, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:52,862:INFO:Checking exceptions
+2023-06-12 07:24:52,862:INFO:Importing libraries
+2023-06-12 07:24:52,862:INFO:Copying training dataset
+2023-06-12 07:24:52,879:INFO:Defining folds
+2023-06-12 07:24:52,880:INFO:Declaring metric variables
+2023-06-12 07:24:52,891:INFO:Importing untrained model
+2023-06-12 07:24:52,902:INFO:Lasso Least Angle Regression Imported successfully
+2023-06-12 07:24:52,919:INFO:Starting cross validation
+2023-06-12 07:24:52,925:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:53,993:INFO:Calculating mean and std
+2023-06-12 07:24:53,996:INFO:Creating metrics dataframe
+2023-06-12 07:24:54,031:INFO:Uploading results into container
+2023-06-12 07:24:54,032:INFO:Uploading model into container now
+2023-06-12 07:24:54,032:INFO:_master_model_container: 6
+2023-06-12 07:24:54,033:INFO:_display_container: 2
+2023-06-12 07:24:54,033:INFO:LassoLars(random_state=123)
+2023-06-12 07:24:54,033:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:54,124:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:54,124:INFO:Creating metrics dataframe
+2023-06-12 07:24:54,134:INFO:Initializing Orthogonal Matching Pursuit
+2023-06-12 07:24:54,135:INFO:Total runtime is 0.27263225317001344 minutes
+2023-06-12 07:24:54,138:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:54,138:INFO:Initializing create_model()
+2023-06-12 07:24:54,138:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=omp, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:54,139:INFO:Checking exceptions
+2023-06-12 07:24:54,139:INFO:Importing libraries
+2023-06-12 07:24:54,139:INFO:Copying training dataset
+2023-06-12 07:24:54,144:INFO:Defining folds
+2023-06-12 07:24:54,145:INFO:Declaring metric variables
+2023-06-12 07:24:54,151:INFO:Importing untrained model
+2023-06-12 07:24:54,159:INFO:Orthogonal Matching Pursuit Imported successfully
+2023-06-12 07:24:54,184:INFO:Starting cross validation
+2023-06-12 07:24:54,191:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:55,145:INFO:Calculating mean and std
+2023-06-12 07:24:55,148:INFO:Creating metrics dataframe
+2023-06-12 07:24:55,179:INFO:Uploading results into container
+2023-06-12 07:24:55,180:INFO:Uploading model into container now
+2023-06-12 07:24:55,181:INFO:_master_model_container: 7
+2023-06-12 07:24:55,181:INFO:_display_container: 2
+2023-06-12 07:24:55,181:INFO:OrthogonalMatchingPursuit()
+2023-06-12 07:24:55,181:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:55,277:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:55,277:INFO:Creating metrics dataframe
+2023-06-12 07:24:55,286:INFO:Initializing Bayesian Ridge
+2023-06-12 07:24:55,286:INFO:Total runtime is 0.29181624253590904 minutes
+2023-06-12 07:24:55,293:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:55,293:INFO:Initializing create_model()
+2023-06-12 07:24:55,294:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=br, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:55,294:INFO:Checking exceptions
+2023-06-12 07:24:55,294:INFO:Importing libraries
+2023-06-12 07:24:55,294:INFO:Copying training dataset
+2023-06-12 07:24:55,311:INFO:Defining folds
+2023-06-12 07:24:55,311:INFO:Declaring metric variables
+2023-06-12 07:24:55,321:INFO:Importing untrained model
+2023-06-12 07:24:55,325:INFO:Bayesian Ridge Imported successfully
+2023-06-12 07:24:55,338:INFO:Starting cross validation
+2023-06-12 07:24:55,340:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:56,274:INFO:Calculating mean and std
+2023-06-12 07:24:56,275:INFO:Creating metrics dataframe
+2023-06-12 07:24:56,307:INFO:Uploading results into container
+2023-06-12 07:24:56,309:INFO:Uploading model into container now
+2023-06-12 07:24:56,309:INFO:_master_model_container: 8
+2023-06-12 07:24:56,309:INFO:_display_container: 2
+2023-06-12 07:24:56,310:INFO:BayesianRidge()
+2023-06-12 07:24:56,310:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:56,398:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:56,398:INFO:Creating metrics dataframe
+2023-06-12 07:24:56,408:INFO:Initializing Passive Aggressive Regressor
+2023-06-12 07:24:56,409:INFO:Total runtime is 0.31053612232208255 minutes
+2023-06-12 07:24:56,416:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:56,416:INFO:Initializing create_model()
+2023-06-12 07:24:56,417:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=par, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:56,417:INFO:Checking exceptions
+2023-06-12 07:24:56,417:INFO:Importing libraries
+2023-06-12 07:24:56,417:INFO:Copying training dataset
+2023-06-12 07:24:56,456:INFO:Defining folds
+2023-06-12 07:24:56,456:INFO:Declaring metric variables
+2023-06-12 07:24:56,463:INFO:Importing untrained model
+2023-06-12 07:24:56,472:INFO:Passive Aggressive Regressor Imported successfully
+2023-06-12 07:24:56,487:INFO:Starting cross validation
+2023-06-12 07:24:56,490:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:57,443:INFO:Calculating mean and std
+2023-06-12 07:24:57,445:INFO:Creating metrics dataframe
+2023-06-12 07:24:57,483:INFO:Uploading results into container
+2023-06-12 07:24:57,484:INFO:Uploading model into container now
+2023-06-12 07:24:57,484:INFO:_master_model_container: 9
+2023-06-12 07:24:57,484:INFO:_display_container: 2
+2023-06-12 07:24:57,484:INFO:PassiveAggressiveRegressor(random_state=123)
+2023-06-12 07:24:57,484:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:57,580:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:57,580:INFO:Creating metrics dataframe
+2023-06-12 07:24:57,590:INFO:Initializing Huber Regressor
+2023-06-12 07:24:57,590:INFO:Total runtime is 0.33021104733149215 minutes
+2023-06-12 07:24:57,595:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:57,595:INFO:Initializing create_model()
+2023-06-12 07:24:57,595:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=huber, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:57,596:INFO:Checking exceptions
+2023-06-12 07:24:57,596:INFO:Importing libraries
+2023-06-12 07:24:57,596:INFO:Copying training dataset
+2023-06-12 07:24:57,605:INFO:Defining folds
+2023-06-12 07:24:57,605:INFO:Declaring metric variables
+2023-06-12 07:24:57,616:INFO:Importing untrained model
+2023-06-12 07:24:57,626:INFO:Huber Regressor Imported successfully
+2023-06-12 07:24:57,637:INFO:Starting cross validation
+2023-06-12 07:24:57,639:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:58,661:INFO:Calculating mean and std
+2023-06-12 07:24:58,663:INFO:Creating metrics dataframe
+2023-06-12 07:24:58,700:INFO:Uploading results into container
+2023-06-12 07:24:58,701:INFO:Uploading model into container now
+2023-06-12 07:24:58,701:INFO:_master_model_container: 10
+2023-06-12 07:24:58,701:INFO:_display_container: 2
+2023-06-12 07:24:58,701:INFO:HuberRegressor()
+2023-06-12 07:24:58,701:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:58,793:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:58,793:INFO:Creating metrics dataframe
+2023-06-12 07:24:58,809:INFO:Initializing K Neighbors Regressor
+2023-06-12 07:24:58,809:INFO:Total runtime is 0.3505411823590597 minutes
+2023-06-12 07:24:58,813:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:24:58,813:INFO:Initializing create_model()
+2023-06-12 07:24:58,813:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=knn, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:24:58,813:INFO:Checking exceptions
+2023-06-12 07:24:58,813:INFO:Importing libraries
+2023-06-12 07:24:58,814:INFO:Copying training dataset
+2023-06-12 07:24:58,821:INFO:Defining folds
+2023-06-12 07:24:58,821:INFO:Declaring metric variables
+2023-06-12 07:24:58,832:INFO:Importing untrained model
+2023-06-12 07:24:58,847:INFO:K Neighbors Regressor Imported successfully
+2023-06-12 07:24:58,859:INFO:Starting cross validation
+2023-06-12 07:24:58,864:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:24:59,863:INFO:Calculating mean and std
+2023-06-12 07:24:59,865:INFO:Creating metrics dataframe
+2023-06-12 07:24:59,901:INFO:Uploading results into container
+2023-06-12 07:24:59,902:INFO:Uploading model into container now
+2023-06-12 07:24:59,902:INFO:_master_model_container: 11
+2023-06-12 07:24:59,902:INFO:_display_container: 2
+2023-06-12 07:24:59,903:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-06-12 07:24:59,903:INFO:create_model() successfully completed......................................
+2023-06-12 07:24:59,993:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:24:59,993:INFO:Creating metrics dataframe
+2023-06-12 07:25:00,008:INFO:Initializing Decision Tree Regressor
+2023-06-12 07:25:00,009:INFO:Total runtime is 0.37053556044896446 minutes
+2023-06-12 07:25:00,014:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:00,015:INFO:Initializing create_model()
+2023-06-12 07:25:00,016:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=dt, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:00,016:INFO:Checking exceptions
+2023-06-12 07:25:00,016:INFO:Importing libraries
+2023-06-12 07:25:00,016:INFO:Copying training dataset
+2023-06-12 07:25:00,026:INFO:Defining folds
+2023-06-12 07:25:00,027:INFO:Declaring metric variables
+2023-06-12 07:25:00,043:INFO:Importing untrained model
+2023-06-12 07:25:00,050:INFO:Decision Tree Regressor Imported successfully
+2023-06-12 07:25:00,065:INFO:Starting cross validation
+2023-06-12 07:25:00,068:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:01,019:INFO:Calculating mean and std
+2023-06-12 07:25:01,022:INFO:Creating metrics dataframe
+2023-06-12 07:25:01,061:INFO:Uploading results into container
+2023-06-12 07:25:01,061:INFO:Uploading model into container now
+2023-06-12 07:25:01,062:INFO:_master_model_container: 12
+2023-06-12 07:25:01,062:INFO:_display_container: 2
+2023-06-12 07:25:01,062:INFO:DecisionTreeRegressor(random_state=123)
+2023-06-12 07:25:01,062:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:01,154:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:01,155:INFO:Creating metrics dataframe
+2023-06-12 07:25:01,166:INFO:Initializing Random Forest Regressor
+2023-06-12 07:25:01,166:INFO:Total runtime is 0.3898160775502523 minutes
+2023-06-12 07:25:01,169:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:01,170:INFO:Initializing create_model()
+2023-06-12 07:25:01,170:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=rf, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:01,171:INFO:Checking exceptions
+2023-06-12 07:25:01,171:INFO:Importing libraries
+2023-06-12 07:25:01,171:INFO:Copying training dataset
+2023-06-12 07:25:01,179:INFO:Defining folds
+2023-06-12 07:25:01,180:INFO:Declaring metric variables
+2023-06-12 07:25:01,188:INFO:Importing untrained model
+2023-06-12 07:25:01,199:INFO:Random Forest Regressor Imported successfully
+2023-06-12 07:25:01,217:INFO:Starting cross validation
+2023-06-12 07:25:01,220:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:03,388:INFO:Calculating mean and std
+2023-06-12 07:25:03,390:INFO:Creating metrics dataframe
+2023-06-12 07:25:03,433:INFO:Uploading results into container
+2023-06-12 07:25:03,434:INFO:Uploading model into container now
+2023-06-12 07:25:03,434:INFO:_master_model_container: 13
+2023-06-12 07:25:03,434:INFO:_display_container: 2
+2023-06-12 07:25:03,434:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2023-06-12 07:25:03,434:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:03,527:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:03,528:INFO:Creating metrics dataframe
+2023-06-12 07:25:03,539:INFO:Initializing Extra Trees Regressor
+2023-06-12 07:25:03,539:INFO:Total runtime is 0.4293733318646749 minutes
+2023-06-12 07:25:03,542:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:03,543:INFO:Initializing create_model()
+2023-06-12 07:25:03,543:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=et, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:03,543:INFO:Checking exceptions
+2023-06-12 07:25:03,544:INFO:Importing libraries
+2023-06-12 07:25:03,544:INFO:Copying training dataset
+2023-06-12 07:25:03,548:INFO:Defining folds
+2023-06-12 07:25:03,549:INFO:Declaring metric variables
+2023-06-12 07:25:03,555:INFO:Importing untrained model
+2023-06-12 07:25:03,561:INFO:Extra Trees Regressor Imported successfully
+2023-06-12 07:25:03,592:INFO:Starting cross validation
+2023-06-12 07:25:03,595:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:05,533:INFO:Calculating mean and std
+2023-06-12 07:25:05,535:INFO:Creating metrics dataframe
+2023-06-12 07:25:05,583:INFO:Uploading results into container
+2023-06-12 07:25:05,584:INFO:Uploading model into container now
+2023-06-12 07:25:05,584:INFO:_master_model_container: 14
+2023-06-12 07:25:05,584:INFO:_display_container: 2
+2023-06-12 07:25:05,585:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2023-06-12 07:25:05,585:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:05,676:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:05,676:INFO:Creating metrics dataframe
+2023-06-12 07:25:05,687:INFO:Initializing AdaBoost Regressor
+2023-06-12 07:25:05,688:INFO:Total runtime is 0.4651768843332927 minutes
+2023-06-12 07:25:05,691:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:05,692:INFO:Initializing create_model()
+2023-06-12 07:25:05,692:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=ada, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:05,692:INFO:Checking exceptions
+2023-06-12 07:25:05,692:INFO:Importing libraries
+2023-06-12 07:25:05,692:INFO:Copying training dataset
+2023-06-12 07:25:05,699:INFO:Defining folds
+2023-06-12 07:25:05,699:INFO:Declaring metric variables
+2023-06-12 07:25:05,706:INFO:Importing untrained model
+2023-06-12 07:25:05,716:INFO:AdaBoost Regressor Imported successfully
+2023-06-12 07:25:05,742:INFO:Starting cross validation
+2023-06-12 07:25:05,745:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:07,107:INFO:Calculating mean and std
+2023-06-12 07:25:07,109:INFO:Creating metrics dataframe
+2023-06-12 07:25:07,161:INFO:Uploading results into container
+2023-06-12 07:25:07,162:INFO:Uploading model into container now
+2023-06-12 07:25:07,162:INFO:_master_model_container: 15
+2023-06-12 07:25:07,162:INFO:_display_container: 2
+2023-06-12 07:25:07,162:INFO:AdaBoostRegressor(random_state=123)
+2023-06-12 07:25:07,163:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:07,261:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:07,261:INFO:Creating metrics dataframe
+2023-06-12 07:25:07,279:INFO:Initializing Gradient Boosting Regressor
+2023-06-12 07:25:07,279:INFO:Total runtime is 0.49170469840367637 minutes
+2023-06-12 07:25:07,284:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:07,285:INFO:Initializing create_model()
+2023-06-12 07:25:07,285:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=gbr, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:07,285:INFO:Checking exceptions
+2023-06-12 07:25:07,285:INFO:Importing libraries
+2023-06-12 07:25:07,286:INFO:Copying training dataset
+2023-06-12 07:25:07,295:INFO:Defining folds
+2023-06-12 07:25:07,295:INFO:Declaring metric variables
+2023-06-12 07:25:07,308:INFO:Importing untrained model
+2023-06-12 07:25:07,320:INFO:Gradient Boosting Regressor Imported successfully
+2023-06-12 07:25:07,332:INFO:Starting cross validation
+2023-06-12 07:25:07,335:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:08,987:INFO:Calculating mean and std
+2023-06-12 07:25:08,990:INFO:Creating metrics dataframe
+2023-06-12 07:25:09,048:INFO:Uploading results into container
+2023-06-12 07:25:09,049:INFO:Uploading model into container now
+2023-06-12 07:25:09,049:INFO:_master_model_container: 16
+2023-06-12 07:25:09,049:INFO:_display_container: 2
+2023-06-12 07:25:09,050:INFO:GradientBoostingRegressor(random_state=123)
+2023-06-12 07:25:09,050:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:09,142:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:09,142:INFO:Creating metrics dataframe
+2023-06-12 07:25:09,154:INFO:Initializing Extreme Gradient Boosting
+2023-06-12 07:25:09,154:INFO:Total runtime is 0.522955052057902 minutes
+2023-06-12 07:25:09,158:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:09,159:INFO:Initializing create_model()
+2023-06-12 07:25:09,159:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=xgboost, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:09,159:INFO:Checking exceptions
+2023-06-12 07:25:09,159:INFO:Importing libraries
+2023-06-12 07:25:09,159:INFO:Copying training dataset
+2023-06-12 07:25:09,172:INFO:Defining folds
+2023-06-12 07:25:09,172:INFO:Declaring metric variables
+2023-06-12 07:25:09,179:INFO:Importing untrained model
+2023-06-12 07:25:09,192:INFO:Extreme Gradient Boosting Imported successfully
+2023-06-12 07:25:09,222:INFO:Starting cross validation
+2023-06-12 07:25:09,227:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:10,571:INFO:Calculating mean and std
+2023-06-12 07:25:10,574:INFO:Creating metrics dataframe
+2023-06-12 07:25:10,636:INFO:Uploading results into container
+2023-06-12 07:25:10,637:INFO:Uploading model into container now
+2023-06-12 07:25:10,637:INFO:_master_model_container: 17
+2023-06-12 07:25:10,637:INFO:_display_container: 2
+2023-06-12 07:25:10,638:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=123, ...)
+2023-06-12 07:25:10,638:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:10,732:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:10,732:INFO:Creating metrics dataframe
+2023-06-12 07:25:10,746:INFO:Initializing Light Gradient Boosting Machine
+2023-06-12 07:25:10,746:INFO:Total runtime is 0.5494818369547526 minutes
+2023-06-12 07:25:10,751:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:10,751:INFO:Initializing create_model()
+2023-06-12 07:25:10,752:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=lightgbm, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:10,752:INFO:Checking exceptions
+2023-06-12 07:25:10,752:INFO:Importing libraries
+2023-06-12 07:25:10,752:INFO:Copying training dataset
+2023-06-12 07:25:10,759:INFO:Defining folds
+2023-06-12 07:25:10,760:INFO:Declaring metric variables
+2023-06-12 07:25:10,793:INFO:Importing untrained model
+2023-06-12 07:25:10,799:INFO:Light Gradient Boosting Machine Imported successfully
+2023-06-12 07:25:10,813:INFO:Starting cross validation
+2023-06-12 07:25:10,815:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:11,978:INFO:Calculating mean and std
+2023-06-12 07:25:11,981:INFO:Creating metrics dataframe
+2023-06-12 07:25:12,045:INFO:Uploading results into container
+2023-06-12 07:25:12,045:INFO:Uploading model into container now
+2023-06-12 07:25:12,046:INFO:_master_model_container: 18
+2023-06-12 07:25:12,046:INFO:_display_container: 2
+2023-06-12 07:25:12,046:INFO:LGBMRegressor(random_state=123)
+2023-06-12 07:25:12,046:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:12,139:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:12,140:INFO:Creating metrics dataframe
+2023-06-12 07:25:12,154:INFO:Initializing Dummy Regressor
+2023-06-12 07:25:12,154:INFO:Total runtime is 0.5729571143786113 minutes
+2023-06-12 07:25:12,158:INFO:SubProcess create_model() called ==================================
+2023-06-12 07:25:12,160:INFO:Initializing create_model()
+2023-06-12 07:25:12,160:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=dummy, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6F51150C0>, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:12,160:INFO:Checking exceptions
+2023-06-12 07:25:12,160:INFO:Importing libraries
+2023-06-12 07:25:12,160:INFO:Copying training dataset
+2023-06-12 07:25:12,168:INFO:Defining folds
+2023-06-12 07:25:12,168:INFO:Declaring metric variables
+2023-06-12 07:25:12,176:INFO:Importing untrained model
+2023-06-12 07:25:12,193:INFO:Dummy Regressor Imported successfully
+2023-06-12 07:25:12,204:INFO:Starting cross validation
+2023-06-12 07:25:12,207:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 07:25:13,219:INFO:Calculating mean and std
+2023-06-12 07:25:13,222:INFO:Creating metrics dataframe
+2023-06-12 07:25:13,287:INFO:Uploading results into container
+2023-06-12 07:25:13,287:INFO:Uploading model into container now
+2023-06-12 07:25:13,288:INFO:_master_model_container: 19
+2023-06-12 07:25:13,288:INFO:_display_container: 2
+2023-06-12 07:25:13,288:INFO:DummyRegressor()
+2023-06-12 07:25:13,288:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:13,381:INFO:SubProcess create_model() end ==================================
+2023-06-12 07:25:13,381:INFO:Creating metrics dataframe
+2023-06-12 07:25:13,406:INFO:Initializing create_model()
+2023-06-12 07:25:13,406:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 07:25:13,407:INFO:Checking exceptions
+2023-06-12 07:25:13,410:INFO:Importing libraries
+2023-06-12 07:25:13,410:INFO:Copying training dataset
+2023-06-12 07:25:13,418:INFO:Defining folds
+2023-06-12 07:25:13,418:INFO:Declaring metric variables
+2023-06-12 07:25:13,418:INFO:Importing untrained model
+2023-06-12 07:25:13,418:INFO:Declaring custom model
+2023-06-12 07:25:13,419:INFO:K Neighbors Regressor Imported successfully
+2023-06-12 07:25:13,421:INFO:Cross validation set to False
+2023-06-12 07:25:13,421:INFO:Fitting Model
+2023-06-12 07:25:13,608:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-06-12 07:25:13,608:INFO:create_model() successfully completed......................................
+2023-06-12 07:25:13,770:INFO:_master_model_container: 19
+2023-06-12 07:25:13,771:INFO:_display_container: 2
+2023-06-12 07:25:13,771:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-06-12 07:25:13,771:INFO:compare_models() successfully completed......................................
+2023-06-12 07:26:36,280:INFO:Initializing tune_model()
+2023-06-12 07:26:36,280:INFO:tune_model(estimator=KNeighborsRegressor(n_jobs=-1), fold=None, round=4, n_iter=100, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>)
+2023-06-12 07:26:36,281:INFO:Checking exceptions
+2023-06-12 07:26:36,358:INFO:Copying training dataset
+2023-06-12 07:26:36,363:INFO:Checking base model
+2023-06-12 07:26:36,364:INFO:Base model : K Neighbors Regressor
+2023-06-12 07:26:36,376:INFO:Declaring metric variables
+2023-06-12 07:26:36,398:INFO:Defining Hyperparameters
+2023-06-12 07:26:36,518:INFO:Tuning with n_jobs=-1
+2023-06-12 07:26:36,518:INFO:Initializing RandomizedSearchCV
+2023-06-12 07:26:39,884:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:41,238:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:41,804:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:54,079:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:54,179:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.89s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:54,186:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:55,454:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 07:26:55,590:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 07:26:56,428:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 1.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 07:26:56,599:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 07:26:57,327:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.06s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:57,494:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.01s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 07:26:57,933:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:22,173:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 18:11:23,546:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 1.16s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-06-12 18:11:24,378:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.84s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 18:11:27,978:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 3.97s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 18:11:28,449:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:108: UserWarning: Persisting input arguments took 2.98s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-06-12 18:11:29,713:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 7.44s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:30,150:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 5.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:32,000:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.42s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:32,121:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.47s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:32,804:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 1.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 18:11:35,505:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.85s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:36,790:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.31s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:37,010:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.13s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:38,015:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:39,611:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 2.33s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:39,752:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.78s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:39,930:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.89s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:40,246:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:41,557:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.88s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:41,569:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.84s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:41,610:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:42,373:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.92s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:45,139:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-06-12 18:11:46,389:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 2.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:46,473:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:46,486:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.47s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:48,210:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:55,137:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:11:56,938:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:00,552:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:08,501:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:10,538:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.03s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:11,333:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:15,188:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:19,604:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:20,228:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:20,832:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:24,269:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:25,327:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.95s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:25,645:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:26,477:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.99s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:27,287:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.89s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:28,084:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:29,703:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:30,717:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:36,507:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:37,444:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:38,774:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:39,584:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:40,522:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:42,556:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:45,293:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:45,353:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:45,782:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:51,921:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.81s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:52,572:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-06-12 18:12:53,155:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 2.36s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:53,738:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:53,942:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 2.34s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:55,165:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.29s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:55,327:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.03s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:55,548:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:56,728:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:56,958:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:12:57,628:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:11,295:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.22s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:11,663:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.05s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:11,693:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:12,403:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.73s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:13,422:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:16,790:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:32,976:INFO:best_params: {'actual_estimator__weights': 'distance', 'actual_estimator__n_neighbors': 5, 'actual_estimator__metric': 'euclidean'}
+2023-06-12 18:13:33,006:INFO:Hyperparameter search completed
+2023-06-12 18:13:33,008:INFO:SubProcess create_model() called ==================================
+2023-06-12 18:13:33,013:INFO:Initializing create_model()
+2023-06-12 18:13:33,014:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A6E43F3B50>, model_only=True, return_train_score=False, kwargs={'weights': 'distance', 'n_neighbors': 5, 'metric': 'euclidean'})
+2023-06-12 18:13:33,014:INFO:Checking exceptions
+2023-06-12 18:13:33,014:INFO:Importing libraries
+2023-06-12 18:13:33,015:INFO:Copying training dataset
+2023-06-12 18:13:33,045:INFO:Defining folds
+2023-06-12 18:13:33,045:INFO:Declaring metric variables
+2023-06-12 18:13:33,081:INFO:Importing untrained model
+2023-06-12 18:13:33,081:INFO:Declaring custom model
+2023-06-12 18:13:33,095:INFO:K Neighbors Regressor Imported successfully
+2023-06-12 18:13:33,113:INFO:Starting cross validation
+2023-06-12 18:13:33,116:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 18:13:35,576:INFO:Calculating mean and std
+2023-06-12 18:13:35,577:INFO:Creating metrics dataframe
+2023-06-12 18:13:35,604:INFO:Finalizing model
+2023-06-12 18:13:36,777:INFO:Uploading results into container
+2023-06-12 18:13:36,779:INFO:Uploading model into container now
+2023-06-12 18:13:36,781:INFO:_master_model_container: 20
+2023-06-12 18:13:36,782:INFO:_display_container: 3
+2023-06-12 18:13:36,783:INFO:KNeighborsRegressor(metric='euclidean', n_jobs=-1, weights='distance')
+2023-06-12 18:13:36,783:INFO:create_model() successfully completed......................................
+2023-06-12 18:13:37,349:INFO:SubProcess create_model() end ==================================
+2023-06-12 18:13:37,349:INFO:choose_better activated
+2023-06-12 18:13:37,362:INFO:SubProcess create_model() called ==================================
+2023-06-12 18:13:37,363:INFO:Initializing create_model()
+2023-06-12 18:13:37,364:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A6F155C280>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-06-12 18:13:37,364:INFO:Checking exceptions
+2023-06-12 18:13:37,374:INFO:Importing libraries
+2023-06-12 18:13:37,374:INFO:Copying training dataset
+2023-06-12 18:13:37,384:INFO:Defining folds
+2023-06-12 18:13:37,386:INFO:Declaring metric variables
+2023-06-12 18:13:37,390:INFO:Importing untrained model
+2023-06-12 18:13:37,390:INFO:Declaring custom model
+2023-06-12 18:13:37,391:INFO:K Neighbors Regressor Imported successfully
+2023-06-12 18:13:37,392:INFO:Starting cross validation
+2023-06-12 18:13:37,397:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-12 18:13:38,895:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-06-12 18:13:41,590:INFO:Calculating mean and std
+2023-06-12 18:13:41,590:INFO:Creating metrics dataframe
+2023-06-12 18:13:41,596:INFO:Finalizing model
+2023-06-12 18:13:42,687:INFO:Uploading results into container
+2023-06-12 18:13:42,689:INFO:Uploading model into container now
+2023-06-12 18:13:42,690:INFO:_master_model_container: 21
+2023-06-12 18:13:42,690:INFO:_display_container: 4
+2023-06-12 18:13:42,692:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-06-12 18:13:42,692:INFO:create_model() successfully completed......................................
+2023-06-12 18:13:42,855:INFO:SubProcess create_model() end ==================================
+2023-06-12 18:13:42,856:INFO:KNeighborsRegressor(n_jobs=-1) result for R2 is 0.6141
+2023-06-12 18:13:42,966:INFO:KNeighborsRegressor(metric='euclidean', n_jobs=-1, weights='distance') result for R2 is 0.6189
+2023-06-12 18:13:42,966:INFO:KNeighborsRegressor(metric='euclidean', n_jobs=-1, weights='distance') is best model
+2023-06-12 18:13:42,967:INFO:choose_better completed
+2023-06-12 18:13:42,982:INFO:_master_model_container: 21
+2023-06-12 18:13:42,983:INFO:_display_container: 3
+2023-06-12 18:13:42,984:INFO:KNeighborsRegressor(metric='euclidean', n_jobs=-1, weights='distance')
+2023-06-12 18:13:42,985:INFO:tune_model() successfully completed......................................
+2023-06-12 19:29:35,598:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_7e23eac8d8b74cf3b774a79ca41e6ffe
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,600:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_18aaae2a7c114aa5853c860fcec989b1_705b94ac0a884d94af45496ad61cdabf
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,601:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_a3edaffd2a754d34989fdd8a2b9dfbc3
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,601:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_45ed6bb03412415abc9d918e6af755da_54b1fab19cc8419f95942ccdcfe0c2e1
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,601:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_1e44b30ea9874de99c07bccb54f469b0
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,601:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_37c182d50ece40b68b5aac301e99b78f_bffb070aabd845898f33908d4a0ec36f
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,602:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_d7deda753a0840bca7f9d4f643e526a8
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,603:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_b023aa409c98491cb75f454624125523_dc119e96ed1e439897f1c942dba19b8c
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,603:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_67625df6ea264bab9d710284a83f3406
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,603:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_58a5500f6d3741ddbe4c69a789edd14a_b414984be5bc48458e3ecd387eac5334
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,603:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_7c967b60df8749a9baaee4d239d2aa1e
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_f8ba6e4f89c44acc833bee90300d1c1e_b074bcd16f0443e5a635cedaee5577ba
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_ca8e2608a18b43a7a225240967b92b90
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_f5d353d7196c4484b2860ad9860db819_ca50898d4fe249c1a95f58a8aa6cde0f
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_11c083d96f344ddca7e7c18d97e141b3
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_822e4eedb43d4a269e4f9cd5c843b4c6_bb22a2b169fa4ede91d872f838039232
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,605:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_f1920b3ced8540a5b63b486aba19eb20
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,606:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_2f6b8b1ea64548f4b53efdb2a2eb096e_47ffb3fd71804466996aa11effe78dc3
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,606:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_50782afba9084f07bbd8f8c652fb4490
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,607:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_60c7cfc366ae4c60996421455c53ade7_b8e0b41a38a140f6bfd0d391296f7c2b
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,607:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_51a5b6a86572483e85dd4418e2629f53
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,607:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_67fba2c31fff495390ace9894691660a_ff4b368712a44fe68f544b50fbb80de2
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,608:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_851b8ead0e884049ba3217fcabe7e7d9
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,608:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_84f813b3d56943ea9a83a34edbe9cd8e_f9ae1d2f8acd4b24bcd887e9533a8c7d
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,608:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_b01391f009a54d1bafef924920971cdb
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,608:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_be9e7197a722451f83b719c0d33f74e4_aa98f3ff14264602b4cc2914afe815b6
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,609:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_353171cb8078418987a93efa619cf875
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,610:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_02f056901dcf4bfc8e91179848a52ea6_eeb97002ddf74fada7f89bf2be3cdd0a
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,610:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_494357372879418d8dc7b5866af84c89
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,610:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_d33c254a753240148f3ed223edaf60d6_5f897e98ac7046dc981ac0666b270538
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,611:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_62ec8fc9baa7425697770b0176507777
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,611:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_9d794addf5f84d13bcce187fb9b140ed_d51bf161666847cab3e878f8e94a7fbd
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,611:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_c79bf843905e4932a1cebfac063e3f4a
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,612:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_ede3be466d614e3fb7e92d825e419403_e4e5c247b0904705a14101adb72a540a
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,612:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_ef14ba4ab07a4519ba0786c507fe245c
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,612:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_2db44cc86c2d403cb662bf551cbc8aa7_38e3317f336045b2815e5da29bb25979
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,613:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_c8c60d5f1b3247d785982537f85d3eef
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,613:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_64375be5838549dd8635038aee76f1b5_293fa74d584d48fb8d88e491ad12ad3f
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,613:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_69f1d6e1c30f41bfa9d3cecbfd54066f
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,614:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_4e30768c645446409069517cd041f482_ce98bb11155e470382f96257e7dda767
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,614:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_1e8c6faeedef45228b6ed61d598ffe75
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,615:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_c4d6a040515a47af92e417f9ab41446f_aef4533c3e294f56a9e5d26ef3ffb717
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,615:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_16d8751899b046a39168e40440f06b13
+  warnings.warn("Failed to delete temporary folder: {}"
+
+2023-06-12 19:29:35,615:WARNING:C:\Users\samin\AppData\Local\Programs\Python\Python310\lib\site-packages\joblib\_memmapping_reducer.py:611: UserWarning: Failed to delete temporary folder: C:\cygwin64\tmp\joblib_memmapping_folder_13588_360fcaa1c37441dba383b008f69baaaa_bcfb493c5c52412fa80581fe1d277aab
+  warnings.warn("Failed to delete temporary folder: {}"
+
